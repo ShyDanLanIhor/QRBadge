@@ -1,0 +1,55 @@
+Software License Agreement
+
+Introductory provisions
+1.1. This license agreement is a legal agreement between QRBadge and the user who installs the program and governs the relationship of the page regarding the use of QRBadge Administration software, which is the Licensor.
+
+1.2. The licensee undertakes to fulfill the terms of the Agreement in full.
+
+Subject of license
+2.1. The Licensor grants the Licensee a non-exclusive right to use the Software in accordance with the terms established by this Agreement.
+
+2.2. The license is granted to the Licensee for an indefinite period.
+
+2.3. The license is granted for one software object and does not extend to other software products that may be released by the Licensor in the future.
+
+2.4. The Licensee has no right to transfer, sell, donate, lease, subordinate, or otherwise grant its rights under this Agreement to third parties without the written permission of the Licensor.
+
+Restrictions on use
+3.1. The licensee does not have the right to:
+
+3.1.1. Use the Software for any purpose other than performing its direct function;
+
+3.1.2. Disclose any information about the Software to third parties;
+
+3.1.3. Use the Software with other software products that are not part of the Software.
+
+3.2. The Licensee undertakes not to take any actions that may lead to violation of the Licensor's rights to the Software.
+
+Intellectual Property
+4.1. The software and all related intellectual property rights belong to the Licensor.
+
+4.2. The Licensee may not modify, copy, distribute, sell, rent or otherwise transfer the Software without the written permission of the Licensor.
+
+Responsibilities of the parties
+5.1. The licensor is not responsible for any direct or indirect damages that may arise as a result of the use or inability to use the Software.
+
+5.2. The Licensee is responsible for any violation of the terms of the Agreement and for any damages that may be caused to the Licensor as a result of such a violation.
+
+Final provisions
+6.1. This Agreement is the entire agreement between the parties and supersedes any prior oral or written agreements regarding the subject matter of the Agreement.
+
+6.2. The licensor has the right to change the terms of the Agreement by publishing new terms on its website.
+
+6.3. In case of any disputes arising from this Agreement, the parties undertake to resolve them through negotiations. If the dispute cannot be resolved through arbitration, it will be referred to a competent court in accordance with the legislation of the Licensor's country.
+
+6.4. If any provision of this Agreement is found by a court to be invalid or unenforceable, this will not affect the other provisions of the Agreement, which shall remain in full force and effect.
+
+6.5. This Agreement shall be interpreted and applied in accordance with the laws of the country in which the Licensor is registered.
+
+6.6. This Agreement can be concluded in the form of an electronic document with mandatory use of the electronic signature of the parties or registered in the relevant register.
+
+Signatures of the Parties:
+
+Licensor: QRBadge.
+
+Licensee: The user who installs the program.

@@ -1,0 +1,325 @@
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\Devart.Data.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\bin\Debug\Devart.Data.MySql.dll
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\source\repos\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\Devart.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\Devart.Data.MySql.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\Devart.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\Devart.Data.MySql.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Final\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\Devart.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\Devart.Data.MySql.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Нова папка\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\Devart.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\Devart.Data.MySql.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\Final\FINAL AdminProgram\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\проекти\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe.config
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\AdminProgram.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\MySql.Data.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Buffers.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Memory.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.pdb
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\Google.Protobuf.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\MySql.Data.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Buffers.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Memory.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.AssemblyReference.cache
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\MainView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\App.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.cache
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram_MarkupCompile.lref
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\App.baml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\CustomControl\BindablePasswordBox.baml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\StyleList.baml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\MainView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\Views\LoginView.baml
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.g.resources
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.Properties.Resources.resources
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.GenerateResource.cache
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CoreCompileInputs.cache
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.csproj.CopyComplete
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.exe
+C:\Users\bohda\OneDrive\Робочий стіл\QRBadge\Основне\AdminProgram\AdminProgram\obj\Debug\AdminProgram.pdb

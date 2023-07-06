@@ -1,0 +1,697 @@
+﻿<Window x:Class="AdminProgram.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdminProgram"
+        xmlns:viewModels="clr-namespace:AdminProgram.ViewModels"
+        xmlns:customcontrols="clr-namespace:AdminProgram.CustomControl"
+        mc:Ignorable="d"
+        Title="Програма адміністрування" Height="583.68" Width="820.8"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Icon="/Images/WhiteVectorProgramIcon.png"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="{ComponentResourceKey ResourceId=DataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle x:Name="Border" Fill="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" SnapsToDevicePixels="True"/>
+                            <Polygon x:Name="Arrow" Fill="Black" HorizontalAlignment="Right" Margin="8,8,3,3" Opacity="0.15" Points="0,10 10,10 10,0" Stretch="Uniform" VerticalAlignment="Bottom"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" TargetName="Border" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="Border" Value="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Visibility" TargetName="Arrow" Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+    <Grid Style="{DynamicResource BasicGridStyle}">
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="mainMenu" Visibility="Hidden">
+            <Button Name="mainMenuAdmins" Style="{DynamicResource SectionButtonStyle}" HorizontalAlignment="Left" Margin="430,310,0,0" VerticalAlignment="Top" Width="345" Height="161" Click="mainMenuAdmins_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,50,0" Source="\Images\Green\imgAdminIcon.png" Width="100" Height="100" />
+                        <TextBlock Margin="0,0,0,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap" Height="32" Width="110"><Bold><Run Text="Адміни"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Name="mainMenuLogs" Style="{DynamicResource SectionButtonStyle}" HorizontalAlignment="Left" Margin="430,111,0,0" VerticalAlignment="Top" Width="345" Height="161" Click="mainMenuLogs_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,50,0" Source="\Images\Green\imgLogIcon.png" Width="100" Height="100" />
+                        <TextBlock Margin="0,0,0,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap" Height="32" Width="110"><Bold><Run Text="Логи"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Name="mainMenuRooms" Style="{DynamicResource SectionButtonStyle}" HorizontalAlignment="Left" Margin="45,111,0,0" VerticalAlignment="Top" Width="345" Height="161" Click="mainMenuRooms_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,50,0" Source="\Images\Green\imgDoorIcon.png" Width="100" Height="100" />
+                        <TextBlock Margin="0,0,0,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap" Height="32" Width="110"><Bold><Run Text="Кімнати"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Name="mainMenuWorkers" Style="{DynamicResource SectionButtonStyle}" HorizontalAlignment="Left" Margin="45,310,0,0" VerticalAlignment="Top" Width="345" Height="161" Click="mainMenuWorkers_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Margin="0,0,2,0" Source="\Images\Green\imgWorkerIcon.png" Width="100" Height="100" />
+                        <TextBlock Margin="0,0,0,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap" Height="32" Width="162"><Bold><Run Text="Працівники"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Style="{DynamicResource SideBarGridStyle}" Name="sideBar" Margin="0,0,714,0" Visibility="Hidden">
+            <Button Name="sidebarMenuDoorsButton" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                    Width="106" Height="124" Click="sidebarMenuDoorsButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\White\imgDoorIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\Green\imgDoorIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="sidebarMenuLogsButton" HorizontalAlignment="Center" Margin="0,121,0,0" VerticalAlignment="Top" 
+            Width="106" Height="124" Click="sidebarMenuLogsButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\White\imgLogIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\Green\imgLogIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="sidebarMenuWorkersButton" HorizontalAlignment="Center" Margin="0,242,0,0" VerticalAlignment="Top" 
+            Width="106" Height="124" Click="sidebarMenuWorkersButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\White\imgWorkerIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\Green\imgWorkerIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="sidebarMenuAdminsButton" HorizontalAlignment="Center" Margin="0,363,0,0" VerticalAlignment="Top" 
+            Width="106" Height="124" Click="sidebarMenuAdminsButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#17515C"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#17515C"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\White\imgAdminIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EEC5A2"/>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="\Images\Green\imgAdminIcon.png" Width="60" Height="60"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="doorsMenu" Margin="106,0,0,0" Visibility="Hidden">
+            <Button x:Name="showDoorsButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="showDoorsButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,350,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Перегляд кімнат"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editDoorsButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editDoorsButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,300,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати кімнати"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToMainMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="doorsShowView" Visibility="Hidden" Margin="106,0,1,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" Name="doorsDataShow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,4,2,87">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID кімнати" Binding="{Binding RoomID}"/>
+                    <DataGridTextColumn Header="Назва кімнати" Binding="{Binding RoomName}"/>
+                    <DataGridTextColumn Header="Рівень доступу кімнати" Binding="{Binding AccessLevel}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToRoomsMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="doorsEditView" Visibility="Hidden" Margin="106,0,0,0">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToRoomsMenuButton_Click"/>
+            <Button x:Name="createDoorButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="createDoorButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Створити нову кімнату"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editDoorButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editDoorButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,300,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати кімнату"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="removeDoorButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Click="removeDoorButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="548">
+                        <TextBlock Margin="0,0,300,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Видалити кімнату"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToCreateDoor" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToDoorsEditViewButton_Click"/>
+            <TextBox x:Name="roomNameInputCreateTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBox x:Name="roomAccessInputCreateTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,239,0,0" TextWrapping="Wrap" Text="Введіть рівень доступу" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="151,124,0,0" TextWrapping="Wrap" Text="Введіть назву" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <Button Content="Створити" FontSize="25" HorizontalAlignment="Left" Margin="153,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="createDoorActionButton_Click"/>
+            <TextBlock x:Name="roomInfoCreateTextBox" HorizontalAlignment="Left" Margin="150,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToEditDoor" Margin="106,0,0,0" Visibility="Hidden">
+            <TextBox x:Name="roomInputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Height="62" Width="408" Text="Введіть дані, за яким здійснеться пошук:"/>
+            <TextBox x:Name="roomOutputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,243,0,0" TextWrapping="Wrap" Text="Дані зміни" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToDoorsEditViewButton_Click"/>
+            <Button Content="Редагувати" FontSize="25" HorizontalAlignment="Left" Margin="153,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="editDoorActionButton_Click"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="roomInputEditComboBox" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID кімнати"/>
+                <ComboBoxItem Content="Назва кімнати"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+            </ComboBox>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="roomOutputEditComboBox" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID кімнати"/>
+                <ComboBoxItem Content="Назва кімнати"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+            </ComboBox>
+            <TextBlock x:Name="roomInfoEditTextBox" HorizontalAlignment="Left" Margin="150,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToRemoveDoor" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,409,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToDoorsEditViewButton_Click"/>
+            <Button Content="Видалити" FontSize="25" HorizontalAlignment="Left" Margin="153,409,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="removeDoorActionButton_Click"/>
+            <TextBox x:Name="roomInputRemoveTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="408" Text="Введіть дані, за якими буде здійснюватися видалення:"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="roomInputRemoveComboBox" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID кімнати"/>
+                <ComboBoxItem Content="Назва кімнати"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+            </ComboBox>
+            <TextBlock x:Name="roomInfoRemoveTextBox" HorizontalAlignment="Left" Margin="150,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="logsMenu" Margin="106,0,0,0" Visibility="Hidden">
+            <Button x:Name="showWorkersLogsButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="showWorkersLogsButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Логи працівників"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="showBlackListButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="showBlackListButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Переглянути чорний список"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editBlackListButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Click="editBlackListButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати чорний список"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="showWorkersLogsView" Visibility="Hidden" Margin="106,0,0,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" Name="workersLogsDataShow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,4,2,87">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Чат ID" Binding="{Binding CHAT_ID}"/>
+                    <DataGridTextColumn Header="Кімната" Binding="{Binding RoomID}"/>
+                    <DataGridTextColumn Header="Час взаємодії" Binding="{Binding DetctionTime}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToLogsMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="showBlackListView" Visibility="Hidden" Margin="106,0,0,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" Name="blackListShow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,4,2,87">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Чат ID" Binding="{Binding USER_ID}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToLogsMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="editBlackListView" Visibility="Hidden" Margin="106,0,0,0">
+            <Button x:Name="addToBlackListButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="addToBlackListButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Добавити до чорного списку"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="removeFromBlackListButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="removeFromBlackListButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,220,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Видалити з чорного списку"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToLogsMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToAddToBlackListWorker" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToEditBlackListViewButton_Click"/>
+            <Button Content="Підтвердити" FontSize="25" HorizontalAlignment="Left" Margin="153,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="addToBlackListActionButton_Click"/>
+            <TextBox x:Name="blackListInputAddTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="397" Text="Введіть дані, за якими буде здійснюватись додавання"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="blackListInputAddComboBox" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <TextBlock x:Name="blackListInfoAddTextBox" HorizontalAlignment="Left" Margin="150,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" />
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToRemoveFromBlackListWorker" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToEditBlackListViewButton_Click"/>
+            <Button Content="Підтвердити" FontSize="25" HorizontalAlignment="Left" Margin="153,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="removeFromBlackListActionButton_Click"/>
+            <TextBox x:Name="blackListInputRemoveTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="397" Text="Введіть дані, за якими буде здійснюватись видалення"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="blackListInputRemoveComboBox" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <TextBlock x:Name="blackListInfoRemoveTextBox" HorizontalAlignment="Left" Margin="150,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" />
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="workersMenu" Margin="106,0,0,0" Visibility="Hidden">
+            <Button x:Name="showWorkersButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="showWorkersButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,305,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Перегляд працівників"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editWorkersButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editWorkersButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати працівників"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToMainMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="workersShowView" Visibility="Hidden" Margin="106,0,0,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" Name="workersDataShow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,4,2,87">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Чат ID" Binding="{Binding CHAT_ID}"/>
+                    <DataGridTextColumn Header="Прізвище" Binding="{Binding LastName}"/>
+                    <DataGridTextColumn Header="Ім'я" Binding="{Binding FirstName}"/>
+                    <DataGridTextColumn Header="Рівень доступу" Binding="{Binding AccessLevel}"/>
+                    <DataGridTextColumn Header="Статус" Binding="{Binding Status}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToWorkersMenuButton_Click"/>
+            <Button Content="Показати детальнішу інформацію" FontSize="25" HorizontalAlignment="Left" Margin="4,466,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="437" Click="showWorkersDetailsButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="workersDetailsShowView" Visibility="Hidden" Margin="106,0,0,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" Name="workersDetailsDataShow" FontSize="19" Margin="3,4,2,87" d:ItemsSource="{d:SampleData ItemCount=5}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Чат ID" Binding="{Binding CHAT_ID}"/>
+                    <DataGridTextColumn Header="По Батькові" Binding="{Binding FatherName}"/>
+                    <DataGridTextColumn Header="Електронна пошта" Binding="{Binding Email}"/>
+                    <DataGridTextColumn Header="Вік" Binding="{Binding Age}"/>
+                    <DataGridTextColumn Header="Номер телефону" Binding="{Binding TelephoneNumber}"/>
+                    <DataGridTextColumn Header="Група крові" Binding="{Binding BloodType}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToWorkersMainShowViewButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="workersEditView" Visibility="Hidden" Margin="106,0,0,0">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToWorkersMenuButton_Click"/>
+            <Button x:Name="verifyWorkerButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="verifyWorkerButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Затвердити працівника"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editWorkerButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editWorkerButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,250,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати працівника"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="removeWorkerButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Click="removeWorkerButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="548">
+                        <TextBlock Margin="0,0,310,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Видалити працівника"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToVerifyWorker" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToWorkersEditViewButton_Click"/>
+            <Button Content="Підтвердити" FontSize="25" HorizontalAlignment="Left" Margin="153,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="verifyWorkerActionButton_Click"/>
+            <TextBox x:Name="workerInputVerifyTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="397" Text="Введіть дані, за якими буде здійснюватись затвердження:"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="workerInputVerifyComboBox" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="workerChooseVerifyOptionComboBox" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="390" Margin="0,300,0,0">
+                <ComboBoxItem Content="Затвердити"/>
+                <ComboBoxItem Content="Спростувати"/>
+            </ComboBox>
+            <TextBlock HorizontalAlignment="Left" Margin="150,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="397" Text="Виберіть опцію затвердження:"/>
+            <TextBlock x:Name="workerInfoVerifyTextBox" HorizontalAlignment="Left" Margin="150,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" />
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToEditWorker" Margin="106,0,0,0" Visibility="Hidden">
+            <TextBox x:Name="workerInputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Height="62" Width="408" Text="Введіть дані, за яким здійснеться пошук"/>
+            <TextBox x:Name="workerOutputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,243,0,0" TextWrapping="Wrap" Text="Дані зміни:" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToWorkersEditViewButton_Click"/>
+            <Button Content="Редагувати" FontSize="25" HorizontalAlignment="Left" Margin="153,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="editWorkerActionButton_Click"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="workerInputEditComboBox" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="workerOutputEditComboBox" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <TextBlock x:Name="workerInfoEditTextBox" HorizontalAlignment="Left" Margin="150,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToRemoveWorker" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToWorkersEditViewButton_Click"/>
+            <Button Content="Підтвердити" FontSize="25" HorizontalAlignment="Left" Margin="153,429,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="removeWorkerActionButton_Click"/>
+            <TextBox x:Name="workerInputRemoveTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="397" Text="Введіть дані, за якими буде здійснюватись видалення"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="workerInputRemoveComboBox" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="Чат ID"/>
+                <ComboBoxItem Content="Прізвище"/>
+                <ComboBoxItem Content="Ім'я"/>
+                <ComboBoxItem Content="Рівень доступу"/>
+                <ComboBoxItem Content="По батькові"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Вік"/>
+                <ComboBoxItem Content="Номер телефону"/>
+                <ComboBoxItem Content="Група крові"/>
+            </ComboBox>
+            <TextBlock x:Name="workerInfoRemoveTextBox" HorizontalAlignment="Left" Margin="150,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" />
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="adminsMenu" Margin="106,0,0,0" Visibility="Hidden">
+            <Button x:Name="showAdminsButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="showAdminsButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,350,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Перегляд адмінів"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editAdminsButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editAdminsButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,320,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати адмінів"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToMainMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="adminsShowView" Visibility="Hidden" Margin="106,0,0,0">
+            <DataGrid Style="{DynamicResource BasicDataGridStyle}" FontSize="19" Name="adminsDataShow" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,4,2,87">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID адміна" Binding="{Binding AdminID}"/>
+                    <DataGridTextColumn Header="Логін" Binding="{Binding Login}"/>
+                    <DataGridTextColumn Header="Електронна пошта" Binding="{Binding Email}"/>
+                    <DataGridTextColumn Header="Номер телефону" Binding="{Binding TelephoneNumber}"/>
+                    <DataGridTextColumn Header="Супер-адмін" Binding="{Binding IS_SUPER}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToAdminsMenuButton_Click"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="adminsEditView" Visibility="Hidden" Margin="106,0,0,0">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="470,465,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="210" Click="exitToAdminsMenuButton_Click"/>
+            <Button x:Name="registerAdminButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Click="registerAdminButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="552">
+                        <TextBlock Margin="0,0,290,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Зареєструвати нового адміна"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="editAdminButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Click="editAdminButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="0,0,300,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Редагувати адміна"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button x:Name="removeAdminButton" Style="{DynamicResource SectionButtonStyle}" Width="630" Height="113" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top" Click="removeAdminButton_Click">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal" Width="548">
+                        <TextBlock Margin="0,0,300,0" FontSize="25" TextAlignment="Center" TextWrapping="Wrap"><Bold><Run Text="Видалити адміна"/></Bold></TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <TextBlock Name="CanModify" HorizontalAlignment="Left" Margin="10,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToRegisterAdmin" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,478,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToAdminsEditViewButton_Click"/>
+            <Button Content="Зарегіструвати" FontSize="25" HorizontalAlignment="Left" Margin="153,478,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="200" Click="registerAdminActionButton_Click"/>
+            <TextBox x:Name="adminEmailInputRegisterTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBox x:Name="adminLoginInputRegisterTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBox x:Name="adminPasswordInputRegisterTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBox x:Name="adminPhoneNumberInputRegisterTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="150,7,0,0" TextWrapping="Wrap" Text="Введіть електронну пошту" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="151,118,0,0" TextWrapping="Wrap" Text="Введіть логін" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,223,0,0" TextWrapping="Wrap" Text="Введіть пароль" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,328,0,0" TextWrapping="Wrap" Text="Введіть номер телефону" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+
+            <TextBlock x:Name="adminsInfoRegisterTextBox" HorizontalAlignment="Left" Margin="150,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToEditAdmin" Margin="106,0,0,0" Visibility="Hidden">
+            <TextBox x:Name="adminInputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Height="62" Width="408" Text="Введіть дані, за яким здійснеться пошук:"/>
+            <TextBox x:Name="adminOutputEditTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,243,0,0" TextWrapping="Wrap" Text="Дані зміни:" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToAdminsEditViewButton_Click"/>
+            <Button Content="Редагувати" FontSize="25" HorizontalAlignment="Left" Margin="153,456,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="editAdminActionButton_Click"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="adminInputEditComboBox" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID адміна"/>
+                <ComboBoxItem Content="Логін"/>
+                <ComboBoxItem Content="Пароль"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Номер телефону"/>
+            </ComboBox>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="adminOutputEditComboBox" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID адміна"/>
+                <ComboBoxItem Content="Логін"/>
+                <ComboBoxItem Content="Пароль"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Номер телефону"/>
+            </ComboBox>
+            <TextBlock x:Name="adminInfoEditTextBox" HorizontalAlignment="Left" Margin="150,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+        <Grid Style="{DynamicResource BasicGridStyle}" Name="viewToRemoveAdmin" Margin="106,0,0,0" Visibility="Hidden">
+            <Button Content="Назад" FontSize="25" HorizontalAlignment="Left" Margin="367,409,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="exitToAdminsEditViewButton_Click"/>
+            <Button Content="Видалити" FontSize="25" HorizontalAlignment="Left" Margin="153,409,0,0" VerticalAlignment="Top" Style="{DynamicResource BasicButtonStyle}" Height="58" Width="180" Click="removeAdminActionButton_Click"/>
+            <TextBox x:Name="adminInputRemoveTextBox" Style="{DynamicResource BasicTextBoxStyle}" HorizontalAlignment="Center" Margin="0,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="395" Height="55"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}" Width="408" Text="Введіть дані, за якими буде здійснюватися видалення:"/>
+            <ComboBox Style="{DynamicResource BasicComboBoxStyle}" Name="adminInputRemoveComboBox" HorizontalAlignment="Center" Margin="0,180,0,0" VerticalAlignment="Top" Height="40" Width="390">
+                <ComboBoxItem Content="ID адміна"/>
+                <ComboBoxItem Content="Логін"/>
+                <ComboBoxItem Content="Пароль"/>
+                <ComboBoxItem Content="Електронна пошта"/>
+                <ComboBoxItem Content="Номер телефону"/>
+            </ComboBox>
+            <TextBlock x:Name="adminInfoRemoveTextBox" HorizontalAlignment="Left" Margin="150,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{DynamicResource BasicTextBlockStyle}"/>
+        </Grid>
+    </Grid>
+</Window>
